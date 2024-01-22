@@ -14,9 +14,13 @@
          rel="stylesheet"
          type="text/css"
       />
-      <style>
+      <style type="text/tailwindcss">
          .font-manrope {
             font-family: "Manrope", sans-serif;
+         }
+
+         .container {
+            @apply px-5 lg:px-0 lg:mx-auto max-w-screen-xl;
          }
       </style>
       <script src="https://cdn.tailwindcss.com"></script>
@@ -27,8 +31,44 @@
             },
          };
       </script>
+
+      <script
+         src="https://kit.fontawesome.com/818096cf08.js"
+         crossorigin="anonymous"
+      ></script>
    </head>
    <body class="font-manrope">
-      <h1>Hello World</h1>
+      <!-- header section -->
+      <header
+         class="container mt-3 mb-5 lg:my-12 flex lg:justify-between items-center"
+      >
+         <nav class="mr-4 lg:mr-0 lg:order-2">
+            <i class="fa-solid fa-bars text-xl lg:hidden"></i>
+            <menu class="hidden lg:flex items-center gap-x-11 opacity-70">
+               <li class="hover:text-orange-600">
+                  <a href=".">Home</a>
+               </li>
+               <li class="hover:text-orange-600"><a href=".">About</a></li>
+               <li class="hover:text-orange-600"><a href=".">Pages</a></li>
+               <li class="hover:text-orange-600"><a href=".">Blog</a></li>
+               <li class="hover:text-orange-600"><a href=".">Contact</a></li>
+            </menu>
+         </nav>
+
+         <h1 class="text-2xl lg:text-4xl lg:order-1 font-extrabold">
+            <span class="text-orange-600">RE</span>PLAY
+         </h1>
+
+         <div class="ml-auto lg:ml-0 flex items-center gap-x-6 lg:order-3">
+            <i
+               class="fa-solid fa-magnifying-glass hidden lg:block opacity-70"
+            ></i>
+            <button
+               class="px-4 py-2 lg:px-6 lg:py-4 flex justify-center items-center bg-orange-600 rounded-lg text-white"
+            >
+               Get Ticket
+            </button>
+         </div>
+      </header>
    </body>
 </html>
