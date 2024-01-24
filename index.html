@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,9 @@
       <link
          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
          rel="stylesheet"
-         <link
+      />
+
+      <link
          href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
          rel="stylesheet"
          type="text/css"
@@ -17,6 +19,10 @@
       <style type="text/tailwindcss">
          .font-manrope {
             font-family: "Manrope", sans-serif;
+         }
+
+         p {
+            @apply text-gray-500;
          }
 
          .container {
@@ -37,14 +43,14 @@
          crossorigin="anonymous"
       ></script>
    </head>
-   <body class="font-manrope">
-      <!-- header section -->
+   <body class="font-manrope text-base">
+      <!-- header -->
       <header
          class="container mt-3 mb-5 lg:my-12 flex lg:justify-between items-center"
       >
          <nav class="mr-4 lg:mr-0 lg:order-2">
             <i class="fa-solid fa-bars text-xl lg:hidden"></i>
-            <menu class="hidden lg:flex items-center gap-x-11 opacity-70">
+            <menu class="hidden lg:flex items-center gap-x-11 text-gray-500">
                <li class="hover:text-orange-600">
                   <a href=".">Home</a>
                </li>
@@ -61,7 +67,7 @@
 
          <div class="ml-auto lg:ml-0 flex items-center gap-x-6 lg:order-3">
             <i
-               class="fa-solid fa-magnifying-glass hidden lg:block opacity-70"
+               class="fa-solid fa-magnifying-glass hidden lg:block text-gray-500"
             ></i>
             <button
                class="px-4 py-2 lg:px-6 lg:py-4 flex justify-center items-center bg-orange-600 rounded-lg text-white"
@@ -70,5 +76,194 @@
             </button>
          </div>
       </header>
+
+      <!-- main  -->
+      <main class="container grid gap-y-10 lg:gap-y-24">
+         <!-- Hockeys club -->
+         <section class="text-center">
+            <hr class="mb-6 border-dotted" />
+            <h1 class="font-extrabold text-2xl">Professional Hockeys Club</h1>
+            <p class="mx-auto mt-4 mb-6 text-gray-500 max-w-2xl">
+               Explore the exhilarating universe of Professional Hockeys Club
+               gaming with our dedicated hub. Stay updated on the latest news,
+               expert insights, and exclusive content.
+            </p>
+            <hr class="mb-6 border-dotted" />
+
+            <section
+               class="grid justify-items-center lg:grid-cols-4 gap-y-6 lg:gap-x-8"
+            >
+               <div>
+                  <div
+                     class="radial-progress font-bold text-error"
+                     style="--value: 87"
+                     role="progressbar"
+                  >
+                     87%
+                  </div>
+
+                  <h4 class="font-bold mt-6 mb-4">Player Facility</h4>
+                  <p>
+                     Discover a state-of-the-art player facility, where
+                     champions are forged and skills are honed.
+                  </p>
+               </div>
+
+               <div>
+                  <div
+                     class="radial-progress text-success"
+                     style="--value: 95"
+                     role="progressbar"
+                  >
+                     95%
+                  </div>
+
+                  <h4 class="font-bold mt-6 mb-4">Experienced Coach</h4>
+                  <p>
+                     Guided by an experienced coach, elevate your gameplay and
+                     sharpen your skills.
+                  </p>
+               </div>
+
+               <div>
+                  <div
+                     class="radial-progress text-warning"
+                     style="--value: 90"
+                     role="progressbar"
+                  >
+                     90%
+                  </div>
+
+                  <h4 class="font-bold mt-6 mb-4">Senior Player</h4>
+                  <p>
+                     Meet the seasoned virtuosos of Professional Hockeys Club -
+                     our Senior Players redefine excellences.
+                  </p>
+               </div>
+               <div>
+                  <div
+                     class="radial-progress text-info"
+                     style="--value: 80"
+                     role="progressbar"
+                  >
+                     80%
+                  </div>
+
+                  <h4 class="font-bold mt-6 mb-4">Training Ground</h4>
+                  <p>
+                     Unleash your potential at the Training Ground, where
+                     champions are forged through immersive experiences.
+                  </p>
+               </div>
+            </section>
+            <hr class="mt-6 border-dotted" />
+         </section>
+
+         <!-- Program Sections -->
+         <section>
+            <div class="text-center">
+               <h1 class="font-extrabold text-2xl">Program Sections</h1>
+               <p class="mt-4">
+                  Explore tailored content in our Program Sections, designed to
+                  enhance your Professional Hockeys Club gaming journey.
+               </p>
+               <hr class="mt-6 border-dotted" />
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-6">
+               <div
+                  class="bg-[url('images/hockey-stick.png')] bg-cover bg-no-repeat bg-center text-white overflow-hidden rounded-xl lg:h-[21.5rem]"
+               >
+                  <div
+                     class="w-full h-full flex items-end backdrop-brightness-50 p-6"
+                  >
+                     <div class="max-w-lg">
+                        <h1 class="font-extrabold text-xl">Junior Program</h1>
+                        <p class="text-white mt-3 mb-5">
+                           Nurture budding talents in our Junior Program,
+                           fostering young gamers for success in the thrilling
+                           world of Professional Hockeys Club.
+                        </p>
+
+                        <button
+                           class="bg-red-500 border-none text-center px-4 py-2 rounded-lg font-semibold"
+                        >
+                           Register Now
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="bg-[url('images/playing-hocky.png')] bg-cover bg-no-repeat bg-center text-white overflow-hidden rounded-xl"
+               >
+                  <div
+                     class="w-full h-full flex items-end backdrop-brightness-50 p-6"
+                  >
+                     <div class="max-w-lg">
+                        <h1 class="font-extrabold text-xl">Teenager Program</h1>
+                        <p class="text-white mt-3 mb-5">
+                           Nurture budding talents in our Junior Program,
+                           fostering young gamers for success in the thrilling
+                           world of Professional Hockeys Club.
+                        </p>
+
+                        <button
+                           class="bg-red-500 border-none text-center px-4 py-2 rounded-lg font-semibold"
+                        >
+                           Register Now
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div
+                  class="bg-[url('images/2-people.png')] bg-cover bg-no-repeat bg-center text-white overflow-hidden rounded-xl lg:col-span-2 lg:h-[28.5rem]"
+               >
+                  <div
+                     class="w-full h-full flex items-end backdrop-brightness-50 p-6"
+                  >
+                     <div class="max-w-lg">
+                        <h1 class="font-extrabold text-xl">
+                           Professional Program
+                        </h1>
+                        <p class="text-white mt-3 mb-5">
+                           Nurture budding talents in our Junior Program,
+                           fostering young gamers for success in the thrilling
+                           world of Professional Hockeys Club.
+                        </p>
+
+                        <button
+                           class="bg-red-500 border-none text-center px-4 py-2 rounded-lg font-semibold"
+                        >
+                           Register Now
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- product section -->
+         <section>
+            <hr class="mt-24 mb-8 border-dotted" />
+
+            <!-- text part -->
+            <div class="text-center">
+               <h1 class="font-extrabold text-2xl">Our New Products</h1>
+               <p class="mx-auto mt-4 mb-6 text-gray-500 max-w-2xl">
+                  "Enhance your gaming with our curated Products - top-tier gear
+                  and exclusive merchandise for Professional Hockeys Club
+                  enthusiasts."
+               </p>
+            </div>
+
+            <!-- picture part -->
+            <section>
+               <div >
+                  <img src="images/red-jacket.png" alt="red-jacket" />
+               </div class="grid grid-cols-2">
+            </section>
+            <hr class="mt-6 border-dotted" />
+         </section>
+      </main>
    </body>
 </html>
