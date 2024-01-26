@@ -55,21 +55,24 @@
       <header
          class="container mt-3 mb-5 lg:my-12 flex lg:justify-between items-center"
       >
-         <nav class="mr-4 lg:mr-0 lg:order-2">
+         <label class="mr-4 lg:mr-0 lg:order-2">
             <i class="fa-solid fa-bars text-xl lg:hidden"></i>
-            <menu class="hidden lg:flex items-center gap-x-11 text-gray-500">
-               <li class="hover:text-orange-600">
+            <input type="checkbox" class="hidden peer" />
+            <menu
+               class="py-10 lg:py-0 gap-y-6 justify-items-center hidden peer-checked:grid lg:flex items-center gap-x-11 font-medium text-black lg:text-gray-500 border-t fixed lg:static top-[4.5rem] inset-x-0 bg-white shadow-md lg:shadow-none lg:border-0 z-50"
+            >
+               <li class="hover:text-crimson">
                   <a href=".">Home</a>
                </li>
-               <li class="hover:text-orange-600"><a href=".">About</a></li>
-               <li class="hover:text-orange-600"><a href=".">Pages</a></li>
-               <li class="hover:text-orange-600"><a href=".">Blog</a></li>
-               <li class="hover:text-orange-600"><a href=".">Contact</a></li>
+               <li class="hover:text-crimson"><a href=".">About</a></li>
+               <li class="hover:text-crimson"><a href=".">Pages</a></li>
+               <li class="hover:text-crimson"><a href=".">Blog</a></li>
+               <li class="hover:text-crimson"><a href=".">Contact</a></li>
             </menu>
-         </nav>
+         </label>
 
          <h1 class="text-2xl lg:text-4xl lg:order-1 font-extrabold">
-            <span class="text-orange-600">RE</span>PLAY
+            <span class="text-crimson">RE</span>PLAY
          </h1>
 
          <div class="ml-auto lg:ml-0 flex items-center gap-x-6 lg:order-3">
@@ -77,7 +80,7 @@
                class="fa-solid fa-magnifying-glass hidden lg:block text-gray-500"
             ></i>
             <button
-               class="px-4 py-2 lg:px-6 lg:py-4 flex justify-center items-center bg-orange-600 rounded-lg text-white"
+               class="px-4 py-2 lg:px-6 lg:py-4 flex justify-center items-center bg-crimson rounded-lg text-white"
             >
                Get Ticket
             </button>
@@ -787,7 +790,18 @@
                      Send Message
                   </button>
                </div>
-               l
+            </div>
+
+            <div
+               class="mt-12 mb-24 p-9 grid justify-items-center gap-y-6 bg-gray-100 rounded-2xl"
+            >
+               <h4 class="font-extrabold text-2xl">Social Media</h4>
+               <div class="flex justify-center items-center gap-x-8">
+                  <img src="icons/twitter.svg" alt="twitter" />
+                  <img src="icons/facebook.svg" alt="facebook" />
+                  <img src="icons/instagram.svg" alt="instagram" />
+                  <img src="icons/github.svg" alt="github" />
+               </div>
             </div>
          </section>
       </main>
