@@ -88,7 +88,94 @@
       </header>
 
       <!-- main  -->
-      <main class="container grid gap-y-10 lg:gap-y-24">
+      <main class="container grid gap-y-10 lg:gap-y-24 lg:aspect-video">
+         <!-- Carousel Section -->
+         <section class="grid gap-y-4 relative min-h-[12.5rem] lg:h-[35rem]">
+            <div class="carousel w-full">
+               <div id="slide1" class="carousel-item relative w-full">
+                  <img
+                     src="images/trophy.png"
+                     class="w-full object-cover rounded-2xl"
+                  />
+                  <div
+                     class="absolute flex justify-center lg:justify-start gap-x-4 transform -translate-y-1/2 inset-x-5 lg:inset-x-8 bottom-5 lg:bottom-8"
+                  >
+                     <a
+                        href="#slide3"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white"
+                     >
+                        ❮
+                     </a>
+                     <a
+                        href="#slide2"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white"
+                     >
+                        ❯
+                     </a>
+                  </div>
+               </div>
+
+               <div id="slide2" class="carousel-item relative w-full">
+                  <img
+                     src="images/hockey-stick.png"
+                     class="w-full object-cover rounded-2xl"
+                  />
+                  <div
+                     class="absolute flex justify-center lg:justify-start gap-x-4 transform -translate-y-1/2 inset-x-5 lg:inset-x-8 bottom-5 lg:bottom-8"
+                  >
+                     <a
+                        href="#slide1"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white"
+                     >
+                        ❮
+                     </a>
+                     <a
+                        href="#slide3"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white"
+                     >
+                        ❯
+                     </a>
+                  </div>
+               </div>
+
+               <div id="slide3" class="carousel-item relative w-full">
+                  <img
+                     src="images/2-people.png"
+                     class="w-full object-cover rounded-2xl"
+                  />
+                  <div
+                     class="absolute flex justify-center lg:justify-start gap-x-4 transform -translate-y-1/2 inset-x-5 lg:inset-x-8 bottom-5 lg:bottom-8"
+                  >
+                     <a
+                        href="#slide2"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white"
+                     >
+                        ❮
+                     </a>
+                     <a
+                        href="#slide1"
+                        class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-white"
+                     >
+                        ❯
+                     </a>
+                  </div>
+               </div>
+            </div>
+
+            <div
+               class="p-4 lg:p-8 lg:max-w-xl grid gap-y-2 lg:gap-y-4 bg-gray-950 rounded-2xl lg:absolute lg:bottom-8 lg:right-8"
+            >
+               <h4 class="font-extrabold text-white">
+                  Meet all the heroes from the field
+               </h4>
+               <p class="text-neutral-400">
+                  Unveil the stories of triumph and dedication as you meet all
+                  the heroes from the field, where every athlete becomes a
+                  source of inspiration.
+               </p>
+            </div>
+         </section>
+
          <!-- Hockeys club -->
          <section class="text-center">
             <div
