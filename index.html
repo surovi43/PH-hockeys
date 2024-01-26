@@ -37,6 +37,9 @@
                   rotate: {
                      145: "145deg",
                   },
+                  colors: {
+                     crimson: "crimson",
+                  },
                },
             },
          };
@@ -207,7 +210,7 @@
                         </p>
 
                         <button
-                           class="bg-red-500 border-none text-center px-4 py-2 rounded-lg font-semibold"
+                           class="bg-crimson border-none text-center px-4 py-2 rounded-lg font-semibold"
                         >
                            Register Now
                         </button>
@@ -229,7 +232,7 @@
                         </p>
 
                         <button
-                           class="bg-red-500 border-none text-center px-4 py-2 rounded-lg font-semibold"
+                           class="bg-crimson border-none text-center px-4 py-2 rounded-lg font-semibold"
                         >
                            Register Now
                         </button>
@@ -253,7 +256,7 @@
                         </p>
 
                         <button
-                           class="bg-red-500 border-none text-center px-4 py-2 rounded-lg font-semibold"
+                           class="bg-crimson border-none text-center px-4 py-2 rounded-lg font-semibold"
                         >
                            Register Now
                         </button>
@@ -410,6 +413,117 @@
                </div>
             </div>
          </section>
+
+         <!-- contact section -->
+         <section>
+            <div
+               class="py-6 lg:py-8 mb-6 lg:mb-12 grid justify-items-center gap-y-4 lg:gap-y-6 border-t border-b border-dashed text-center"
+            >
+               <h1 class="font-extrabold text-2xl">Get In Touch</h1>
+               <p class="mx-auto text-gray-500 max-w-2xl">
+                  Feel free to reach out to our dedicated team for any inquiries
+                  or assistance; we're here to support your hockey journey.
+               </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-6">
+               <div
+                  class="p-6 lg:p-12 grid gap-y-4 lg:gap-y-6 border rounded-2xl lg:col-span-5 content-start"
+               >
+                  <div class="p-6 lg:8 bg-green-50 rounded-2xl">
+                     <img
+                        src="images/call-icon.png"
+                        alt="Call-icon"
+                        class="w-12 h-12"
+                     />
+                     <h4 class="mt-6 mb-2 text-gray-500">Phone Number :</h4>
+                     <h4 class="font-extrabold text-lg">(+62) 123-321-543</h4>
+                  </div>
+
+                  <div class="p-6 lg:8 bg-yellow-50 rounded-2xl">
+                     <img
+                        src="images/msg-icon.png"
+                        alt="msg-icon"
+                        class="w-12 h-12"
+                     />
+                     <h4 class="mt-6 mb-2 text-gray-500">Email :</h4>
+                     <h4 class="font-extrabold text-lg">hockeys@support.com</h4>
+                  </div>
+
+                  <div class="p-6 lg:8 bg-blue-50 rounded-2xl">
+                     <img
+                        src="images/map-icon.png"
+                        alt="map-icon"
+                        class="w-12 h-12"
+                     />
+
+                     <h4 class="mt-6 mb-2 text-gray-500">Location :</h4>
+                     <h4 class="font-extrabold text-lg">
+                        152/1 Mohakhali Wireless Gate
+                     </h4>
+                  </div>
+               </div>
+
+               <div class="lg:col-span-7 grid gap-5 lg:gap-6 lg:grid-cols-2">
+                  <div class="grid gap-y-4">
+                     <label class="text-xl font-semibold">Your name</label>
+                     <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your full name"
+                        class="px-5 h-16 bg-gray-100 rounded-xl"
+                     />
+                  </div>
+
+                  <div class="grid gap-y-4">
+                     <label class="text-xl font-semibold">Your Email</label>
+                     <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        class="px-5 h-16 bg-gray-100 rounded-xl"
+                     />
+                  </div>
+
+                  <div class="grid gap-y-4">
+                     <label class="text-xl font-semibold">Subject</label>
+                     <input
+                        type="text"
+                        name="subject"
+                        placeholder="Enter your subject"
+                        class="px-5 h-16 bg-gray-100 rounded-xl"
+                     />
+                  </div>
+
+                  <div class="grid gap-y-4">
+                     <label class="text-xl font-semibold">Phone Number</label>
+                     <input
+                        type="tel"
+                        name="contact"
+                        placeholder="Enter your phone number"
+                        class="px-5 h-16 bg-gray-100 rounded-xl"
+                     />
+                  </div>
+
+                  <div class="grid gap-y-4 lg:col-span-2">
+                     <label class="text-xl font-semibold">Message</label>
+                     <textarea
+                        type="tel"
+                        name="contact"
+                        placeholder="Write your message"
+                        class="p-5 h-52 lg:h-80 bg-gray-100 rounded-xl"
+                     ></textarea>
+                  </div>
+
+                  <button
+                     class="py-4 lg:col-span-2 rounded-xl bg-crimson text-white font-medium text-lg"
+                  >
+                     Send Message
+                  </button>
+               </div>
+               l
+            </div>
+         </section>
       </main>
 
       <!-- footer section -->
@@ -424,11 +538,11 @@
                   placerat dolor. Purus urna in sit nullam proin.
                </p>
                <div class="mt-1 lg:mt-2">
-                  <i class="fa-regular fa-envelope text-xl text-rose-700"></i>
+                  <i class="fa-regular fa-envelope text-xl text-crimson"></i>
                   <span class="ml-4">hockeys@support.com</span>
                </div>
                <div>
-                  <i class="fa-solid fa-phone text-xl text-rose-700"></i>
+                  <i class="fa-solid fa-phone text-xl text-crimson"></i>
                   <span class="ml-4">(+62) 123-321-543</span>
                </div>
             </div>
